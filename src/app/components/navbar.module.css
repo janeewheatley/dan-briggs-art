@@ -1,0 +1,12 @@
+.floating {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px) translateX(0px); }
+  25%  { transform: translateY(-2px) translateX(2px); }
+  50%  { transform: translateY(0px) translateX(0px); }
+  75%  { transform: translateY(2px) translateX(-2px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
