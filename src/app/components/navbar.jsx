@@ -7,10 +7,10 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex w-full justify-between px-14 pt-12 sm:py-5 lg:pt-12 lg:pt-12 sm:pt-12">
+    <nav className="relative flex w-full justify-between px-14 pt-12 sm:py-5 lg:pt-12 lg:pt-12 sm:pt-12">
       <div className="nav-left">
         <a href="/" className="logo">
-          <img src="/DanielBriggsSig_black_no_bg.png" alt="Daniel Briggs" className="h-20 w-auto" />
+          <img src="/DanielBriggsSig_black_no_bg.png" alt="Daniel Briggs" className="h-12 md:h-16 sm:h-20 w-auto" />
         </a>
       </div>
 
@@ -49,19 +49,51 @@ function Navbar() {
           </svg>
         </button>
       </div>
+      {/* Desktop Menu */}
       <div className="nav-right hidden sm:flex space-x-6 pt-6" style={{ fontFamily: "'Inter', sans-serif" }}>
         <a href="/" className={`text-sm hover:text-gray-500 ${pathname === '/' ? 'text-gray-400' : ''}`}>Drawings</a>
         <a href="/comics" className={`text-sm hover:text-gray-500 ${pathname === '/comics' ? 'text-gray-400' : ''}`}>Comics</a>
         <a href="https://danbriggscomics.bigcartel.com/" className={`text-sm hover:text-gray-500`} target="_blank" rel="noopener noreferrer">Store</a>
         <a href="/contact" className={`text-sm hover:text-gray-500 ${pathname === '/contact' ? 'text-gray-400' : ''}`}>Contact</a>
       </div>
-
-
-
-      
+      {/* Mobile Menu - shows when hamburger is clicked */}
+      {isOpen && (
+      <div className="fixed top-0 left-0 w-full h-full bg-white z-50 sm:hidden" style={{ fontFamily: "'Inter', sans-serif" }}>
+        {/* Close button */}
+        <div className="absolute right-14 pt-12">
+          <button 
+            onClick={() => setIsOpen(false)} 
+            type="button"
+            className="focus:outline-none"
+            aria-label="Close menu"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="flex flex-col pt-20 items-center h-full space-y-8 text-lg">
+          <a href="/" className={`hover:text-gray-500 ${pathname === '/' ? 'text-gray-400' : ''}`} onClick={() => setIsOpen(false)}>Drawings</a>
+          <a href="/comics" className={`hover:text-gray-500 ${pathname === '/comics' ? 'text-gray-400' : ''}`} onClick={() => setIsOpen(false)}>Comics</a>
+          <a href="https://danbriggscomics.bigcartel.com/" className={`hover:text-gray-500`} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Store</a>
+          <a href="/contact" className={`hover:text-gray-500 ${pathname === '/contact' ? 'text-gray-400' : ''}`} onClick={() => setIsOpen(false)}>Contact</a>
+        </div>
+      </div>
+      )}
     </nav>
   );
 }
-
 
 export default Navbar;
