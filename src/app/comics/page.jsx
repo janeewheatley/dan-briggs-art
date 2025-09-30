@@ -1,7 +1,7 @@
 function Comics() {
   return (
     <div>
-      <div className="comic-page flex flex-col w-full lg:w-3/4 md:w-1/2 sm:w-full mx-auto pt-8 px-4" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <div className="comic-page flex flex-col w-full lg:w-3/4 md:w-3/4 sm:w-full mx-auto pt-8 px-4" style={{ fontFamily: "'Inter', sans-serif" }}>
         <div className="video-container flex flex-col mb-6">
           <video controls className="w-full rounded-md">
             <source src="/art/comics/lost_woods/lost-woods-horizontal.mp4" type="video/mp4" />
@@ -14,6 +14,16 @@ function Comics() {
           <div className="text-sm text-gray-700 space-y-1">
             <p><span className="font-medium">Writer:</span> Jason Perun</p>
             <p><span className="font-medium">Art:</span> Daniel Briggs</p>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://danbriggscomics.bigcartel.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-black text-white px-8 py-3 sm:px-6 sm:py-2 rounded-md hover:bg-gray-700 transition-colors text-base sm:text-sm font-medium"
+            >
+              Buy
+            </a>
           </div>
         </div>
       </div>
