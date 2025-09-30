@@ -15,7 +15,7 @@ function Gallery() {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-14 h-screen overflow-y-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:overflow-x-auto lg:space-x-12 gap-2 px-14 h-screen overflow-y-auto">
         {images.map((src, index) => (
             <img
                 key={index}
