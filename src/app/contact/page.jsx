@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="contact-container flex flex-col md:flex-row justify-center items-center md:items-start pt-10 px-6">
+    <div className="contact-container flex flex-col md:flex-row justify-center items-center md:items-start pt-10 px-6 pb-10">
       <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-12">
         <img
           src="/art/drawings/fozzy.webp"

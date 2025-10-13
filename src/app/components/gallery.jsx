@@ -12,6 +12,19 @@ function Gallery() {
     "/art/drawings/Sun Ra.webp",
     "/art/drawings/fortune-teller.webp",
     "/art/drawings/frida.webp",
+    "/art/drawings/frog.webp",
+    "/art/drawings/gorilla.webp",
+    "/art/drawings/tiger fight.webp",
+    "/art/drawings/octopus.webp",
+    "/art/drawings/psych-skull.webp",
+    "/art/drawings/iguana.webp",
+    "/art/drawings/demon.webp",
+    "/art/drawings/scientist.webp",
+    "/art/drawings/mars-attack.webp",
+    "/art/drawings/sailor.webp",
+    "/art/drawings/skull.webp",
+    "/art/drawings/knight.webp",
+
   ];
 
   return (
