@@ -7,10 +7,10 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="relative flex w-full justify-between px-14 pt-12 sm:py-5 lg:pt-12 lg:pt-12 sm:pt-12">
+    <nav className="relative flex w-full justify-between px-2 lg:px-14 pt-12 sm:py-5 lg:pt-12 lg:pt-12 sm:pt-12">
       <div className="nav-left">
         <a href="/" className="logo">
-          <img src="/DanielBriggsSig_black_no_bg.png" alt="Daniel Briggs" className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto" />
+          <img src="/DanielBriggsSig_black_no_bg.png" alt="Daniel Briggs" className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto" />
         </a>
       </div>
 

@@ -12,7 +12,7 @@ function Gallery() {
     "/art/drawings/Sun Ra.webp",
     "/art/drawings/fortune-teller.webp",
     "/art/drawings/frida.webp",
-    "/art/drawings/frog.webp",
+    "/art/drawings/frog-prince.webp",
     "/art/drawings/gorilla.webp",
     "/art/drawings/tiger fight.webp",
     "/art/drawings/octopus.webp",
@@ -28,7 +28,7 @@ function Gallery() {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:overflow-x-auto gap-2 lg:gap-12 px-14 overflow-y-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:overflow-x-auto gap-2 lg:gap-12 px-2 lg:px-14 overflow-y-auto">
         {images.map((src, index) => (
             <img
                 key={index}
