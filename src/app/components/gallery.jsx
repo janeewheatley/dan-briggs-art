@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 function Gallery() {
   const images = [
     "/art/drawings/melting.webp",
@@ -30,11 +32,14 @@ function Gallery() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:overflow-x-auto gap-2 lg:gap-12 px-4 lg:px-14 overflow-y-auto">
         {images.map((src, index) => (
-            <img
+            <Image
                 key={index}
                 src={src}
                 alt={`Artwork ${index + 1}`}
+                width={800}
+                height={1000}
                 className="w-full lg:w-auto lg:max-h-[calc(100vh-200px)] lg:flex-shrink-0 object-contain"
+                priority={index < 3}
             />
         ))}
     </div>

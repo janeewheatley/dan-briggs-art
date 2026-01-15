@@ -8,7 +8,7 @@ function Contact() {
           className="w-48 sm:w-64 md:w-80 lg:w-96 h-auto max-w-full rounded-lg shadow-lg"
         />
       </div>
-      <div className="contact-info text-center md:text-left" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <div className="contact-info text-center md:text-left font-inter">
         <h1 className="text-2xl md:text-3xl font-bold mb-6">Contact Info</h1>
         <div className="space-y-4">
           <p className="text-lg">
