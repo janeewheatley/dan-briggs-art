@@ -8,7 +8,13 @@ const geistSans = Geist({
 });
 
 export const metadata = {
-  title: "Dan Briggs Art"
+  title: "Dan Briggs Art",
+  description: "Portfolio of artist Dan Briggs featuring drawings, comics, and music",
+  openGraph: {
+    title: "Dan Briggs Art",
+    description: "Portfolio of artist Dan Briggs featuring drawings, comics, and music",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
